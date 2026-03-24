@@ -1,4 +1,5 @@
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
@@ -9,3 +10,5 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
 };
+
+module.exports = nextConfig;
